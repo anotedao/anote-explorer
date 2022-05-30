@@ -2,29 +2,17 @@ import React from 'react';
 
 const socialLinks = [{
     id: 'github',
-    url: 'https://github.com/wavesplatform/'
-}, {
-    id: 'twitter',
-    url: 'https://twitter.com/@wavesplatform'
+    url: 'https://github.com/aintdigital/'
 }, {
     id: 'facebook',
-    url: 'https://www.facebook.com/wavesplatform/'
-}, {
-    id: 'discord',
-    url: 'https://discord.gg/cnFmDyA'
-}, {
-    id: 'telegram',
-    url: 'https://telegram.me/wavesnews'
-}, {
-    id: 'reddit',
-    url: 'https://reddit.com/r/Wavesplatform/'
+    url: 'https://www.facebook.com/anonutopia'
 }];
 
 const Footer = ({version}) => {
     return (
         <div className="menu-footer">
             <div>Version: {version}</div>
-            <div>Brought to you by Waves Team</div>
+            <div>Brought to you by AINT Team</div>
             <div>
                 {socialLinks.map(item =>
                     (<a key={item.id} className={`social ${item.id}`} href={item.url} target="_blank"></a>))}

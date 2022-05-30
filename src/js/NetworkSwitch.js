@@ -71,36 +71,7 @@ export default class NetworkSwitch extends React.PureComponent {
         const configuration = extractEditableConfiguration(custom);
 
         return (
-            <div>
-                <div className="network-switcher">
-                    <div className="current-network">
-                        <i className="network-icon-active"></i>
-                        <span className={listClassName} onClick={this.toggleNetworks}>{current.displayName}</span>
-                        <div className="network-list-expanded">
-                            {networks
-                                .filter(item => item.networkId !== current.networkId)
-                                .map((item, index) => {
-                                    return <Network key={index} {...item} onSwitchNetwork={this.switchNetwork} />
-                                })
-                            }
-                        </div>
-                    </div>
-                    <div className="settings-button" onClick={this.toggleModal}></div>
-                </div>
-                <Modal className="modal-content"
-                    isOpen={this.state.showModal}
-                    onRequestClose={this.toggleModal}
-                    contentLabel="Modal example"
-                    overlayClassName="modal-overlay"
-                >
-                    <ConfigurationForm
-                        onClose={this.toggleModal}
-                        title="Custom"
-                        onSubmit={this.props.onUpdateCustomNetwork}
-                        values={configuration}
-                    />
-                </Modal>
-            </div>
+            <div></div>
         );
     }
 }

@@ -1,4 +1,4 @@
-const nodeUrl = 'https://nodes.wavesexplorer.com';
+const nodeUrl = 'https://nodes.aint.digital';
 
 export default {
     networkId: 'mainnet',
