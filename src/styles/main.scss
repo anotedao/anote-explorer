@@ -124,7 +124,7 @@ body {
             .logo {
                 position: fixed;
                 left: 53px;
-                width: 230px;
+                width: 140px;
             }
         }
 
@@ -179,8 +179,8 @@ body {
 
             &::after {
                 content: "Explorer";
-                left: 135px;
-                bottom: -15px;
+                left: 138px;
+                bottom: -8px;
                 position: relative;
                 @include font(headline1);
             }
