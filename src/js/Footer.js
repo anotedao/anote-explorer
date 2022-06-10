@@ -4,6 +4,9 @@ const socialLinks = [{
     id: 'github',
     url: 'https://github.com/aintdigital/'
 }, {
+    id: 'telegram',
+    url: 'https://t.me/aintdigital'
+}, {
     id: 'facebook',
     url: 'https://www.facebook.com/anonutopia'
 }];

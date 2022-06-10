@@ -165,7 +165,8 @@ body {
         }
 
         > .logo {
-            background: url('../images/waves-124.svg') no-repeat 0 3px;
+            background: url('../images/logo.png') no-repeat 0 0px;
+            background-size: contain;
             min-height: 44px;
 
             a {
@@ -178,8 +179,8 @@ body {
 
             &::after {
                 content: "Explorer";
-                left: 132px;
-                bottom: -8px;
+                left: 135px;
+                bottom: -15px;
                 position: relative;
                 @include font(headline1);
             }
