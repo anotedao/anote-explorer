@@ -122,7 +122,9 @@ body {
 
         @media screen and (min-width: 1367px) {
             .logo {
-                // left: 53px;
+                position: fixed;
+                left: 53px;
+                width: 140px;
             }
         }
 
@@ -130,7 +132,7 @@ body {
             display: none;
             width: 24px;
             height: 20px;
-            margin-bottom: 5px;
+            margin-top: -5px;
             cursor: pointer;
             position: relative;
             margin-right: 18px;
@@ -165,7 +167,7 @@ body {
         > .logo {
             background: url('../images/logo.png') no-repeat 0 0px;
             background-size: contain;
-            min-height: 40px;
+            min-height: 44px;
             margin-left: 0px;
 
             a {
@@ -178,8 +180,8 @@ body {
 
             &::after {
                 content: "Explorer";
-                left: 142px;
-                bottom: -11px;
+                left: 138px;
+                bottom: -8px;
                 position: relative;
                 @include font(headline1);
             }
