@@ -1,4 +1,4 @@
-const nodeUrl = 'https://nodes.anote.digital';
+const nodeUrl = 'https://node.anote.digital';
 
 export default {
     networkId: 'mainnet',

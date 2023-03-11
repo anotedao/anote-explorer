@@ -9,6 +9,7 @@ import {ethAddress2waves} from "@waves/node-api-js";
 import {getNetworkByte} from "../shared/utils";
 import config from '../configuration/config.mainnet';
 import axios from "axios";
+import { add } from 'lodash';
 
 export class AddressService extends ApiClientService {
     constructor(transactionTransformerService, currencyService, configurationService, networkId) {
@@ -66,7 +67,6 @@ export class AddressService extends ApiClientService {
         const details = (await api.detailsMultiple(balanceResponse.balances.map(({assetId}) => assetId)))
             .reduce((acc, val) => ({...acc, [val.assetId]: val}), {})
         return balanceResponse.balances.map(item => {
-
             // TODO: remove when token is renamed
             if (item.assetId === VostokToWavesEnterprise.id) {
                 item.issueTransaction.name = VostokToWavesEnterprise.name;
