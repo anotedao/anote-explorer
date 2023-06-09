@@ -2,13 +2,13 @@ import React from 'react';
 
 const socialLinks = [{
     id: 'github',
-    url: 'https://github.com/anonutopia/'
+    url: 'https://github.com/anotedao/'
 }, {
     id: 'telegram',
-    url: 'https://t.me/anotedigital'
+    url: 'https://t.me/AnoteDAO'
 }, {
     id: 'facebook',
-    url: 'https://www.facebook.com/anonutopia'
+    url: 'https://www.facebook.com/anotedao'
 }];
 
 const Footer = ({version}) => {
