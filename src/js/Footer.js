@@ -21,7 +21,7 @@ const Footer = ({version}) => {
                     (<a key={item.id} className={`social ${item.id}`} href={item.url} target="_blank"></a>))}
             </div>
             <div>
-                <a className="fade" href="https://anote.digital/" target="_blank">anote.digital</a>
+                <a className="fade" href="https://anotedao.com/" target="_blank">anotedao.com</a>
             </div>
         </div>
     );

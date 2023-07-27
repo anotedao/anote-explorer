@@ -53,7 +53,7 @@ export class SingleAddressPage extends React.Component {
                     <GoBack/>
                     <div className="address-title">
                         <Headline title="Address" subtitle={this.props.match.params.address} size={HeadlineSize.Medium}/>
-                        <Headline title="Ethereum Address" subtitle={ethAddress} size={HeadlineSize.Small}/>
+                        {/* <Headline title="Ethereum Address" subtitle={ethAddress} size={HeadlineSize.Small}/> */}
                     </div>
                     <BalanceDetails balance={this.state.balance}/>
                     <RoutedTabsContainer defaultTab="tx" basePath={basePath} activeTab={tab}>
