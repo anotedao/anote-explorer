@@ -19,9 +19,9 @@ export class PeerListItem extends React.Component {
                 <td data-label="Node name">
                     <div className="line">{peer.name.toString()}</div>
                 </td>
-                <td data-label="Node nonce">
+                {/* <td data-label="Node nonce">
                     <div className="line">{peer.nonce.toString()}</div>
-                </td>
+                </td> */}
             </tr>
         );
     }

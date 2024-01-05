@@ -26,12 +26,12 @@ const buildItems = () => {
         visible: alwaysVisible,
         icon: 'icon-blocks'
     }, {
-        title: 'Peers',
+        title: 'Nodes',
         route: networkId => routeBuilder(networkId).peers.list,
         visible: alwaysVisible,
         icon: 'icon-peers'
     }, {
-        title: 'Nodes',
+        title: 'Public Nodes',
         route: networkId => routeBuilder(networkId).nodes.list,
         visible: alwaysVisible,
         icon: 'icon-nodes'
