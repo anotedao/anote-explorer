@@ -166,9 +166,10 @@ body {
 
         > .logo {
             background: url('../images/logo.png') no-repeat 0 0px;
-            background-size: 140px auto;
+            background-size: 100px auto;
             min-height: 44px;
             margin-left: 0px;
+            width: 100px;
 
             a {
                 display: block;
@@ -180,8 +181,8 @@ body {
 
             &::after {
                 content: "Explorer";
-                left: 138px;
-                bottom: -8px;
+                left: 100px;
+                bottom: -7px;
                 position: relative;
                 @include font(headline1);
             }
@@ -219,7 +220,7 @@ body {
 
             a {
                 &::after {
-                    background-image: url(../images/menu-sprite.svg);
+                    background-image: url(../images/menu-sprite.png);
                     background-repeat: no-repeat;
                     background-position: 0 0;
                     content: '';

@@ -71,7 +71,7 @@
 @mixin loading() {
     width: 24px;
     height: 24px;
-    background: url('../images/loading-24.svg') no-repeat center center;
+    background: url('../images/loading-24.png') no-repeat center center;
     animation: spin 1s linear infinite;
     margin: 10px auto;
     svg {display: none;}

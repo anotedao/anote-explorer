@@ -121,7 +121,7 @@
             margin-top: 20vh;
 
             > .icon {
-                background: url('../images/confirmed-88.svg') no-repeat center center;
+                background: url('../images/confirmed-88.png') no-repeat center center;
             }
         }
 
@@ -175,7 +175,7 @@
     @for $i from 1 through 3 {
         &:nth-child(3n+#{$i}) {
             .block-img {
-                background: url('../images/waves-block-#{$i}.svg') no-repeat center center;
+                background: url('../images/waves-block-#{$i}.png') no-repeat center center;
                 width: 40px;
                 height: 40px;
                 float: left;

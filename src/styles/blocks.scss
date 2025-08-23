@@ -17,13 +17,13 @@ table.blocks {
     tbody tr {
         max-width: 380px;
         .block-img {
-            background: url(../images/waves-block-1.svg) center no-repeat
+            background: url(../images/waves-block-1.png) center no-repeat
         }
         &:nth-child(3n) .block-img {
-            background: url(../images/waves-block-2.svg) center no-repeat
+            background: url(../images/waves-block-2.png) center no-repeat
         }
         &:nth-child(3n + 1) .block-img {
-            background: url(../images/waves-block-3.svg) center no-repeat
+            background: url(../images/waves-block-3.png) center no-repeat
         }
         &.empty-block {
             .block-img {
