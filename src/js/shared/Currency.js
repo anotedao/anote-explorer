@@ -14,6 +14,9 @@ export default class Currency {
         } else {
             this.roundingMode = Decimal.ROUND_HALF_UP;
         }
+
+        this.shortName = this.shortName.replace("_", "");
+        this.displayName = this.displayName.replace("_", "");
     }
 
     static WAVES = new Currency({
@@ -26,7 +29,7 @@ export default class Currency {
     static currencyFromData = data => {
         return new Currency({
             id: data.assetId,
-            displayName: data.name,
+            displayName: data.name.replace("_", ""),
             precision: data.decimals
         });
     };

@@ -15,8 +15,8 @@ export class TransactionListItem extends React.PureComponent {
     conventAmount = (v) => {
         if (!v) return null
         if (Array.isArray(v)) return v.map(({amount, currency}, i) => <p key={i}
-                                                                         className="line">{amount} {currency}</p>)
-        else return <div className="line">{v.amount} {v.currency}</div>
+                                                                         className="line">{amount} {currency.replace("_", "")}</p>)
+        else return <div className="line">{v.amount} {v.currency.replace("_", "")}</div>
     }
 
     dappBadgeOrNothing = (tx) => {

@@ -16,7 +16,7 @@ export class AssetListItem extends React.PureComponent {
                     <div className="line no-wrap"><AssetRef assetId={asset.id}/></div>
                 </td>
                 <td data-label="Name">
-                    <div className="line">{asset.name}</div>
+                    <div className="line">{asset.name.replace("_", "")}</div>
                 </td>
                 <td data-label="Balance">
                     <div className="line">{asset.amount}</div>

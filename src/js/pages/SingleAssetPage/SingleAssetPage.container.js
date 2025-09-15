@@ -74,7 +74,7 @@ export class SingleAssetPage extends React.Component {
                 value: <EndpointRef endpoint={details.issuer}/>
             }, {
                 label: 'Asset Name',
-                value: details.name,
+                value: details.name.toString().replace("_", ""),
             }, {
                 label: 'Description',
                 value: <span>{details.description}</span>
