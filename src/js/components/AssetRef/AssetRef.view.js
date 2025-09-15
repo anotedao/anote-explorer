@@ -12,7 +12,7 @@ class AssetRef extends React.PureComponent {
     };
 
     render() {
-        const text = this.props.text || this.props.assetId;
+        const text = (this.props.text || this.props.assetId).toString().replace("_", "");
         const {networkId} = this.props.match.params;
         const routes = routeBuilder(networkId);
 
